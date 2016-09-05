@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(method="post" action="/create-account")
+    input(name="name" type="text" required)
+    input(name="email" type="email" required)
+    input(name="password" type="password" required)
+    input(name="verify-password" type="password" requried)
+    button(type="submit") Create Account
